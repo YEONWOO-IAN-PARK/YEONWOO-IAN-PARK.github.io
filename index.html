@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Momentum</title>
+</head>
+<body>
+    <h1 id="clock" style="display: none;">00:00:00</h1>
+    <h1 id="greeting" ></h1>
+    <form class="hidden" id="login-form">
+        <div>
+            <h1 class="join">Hello, What's your name?</h1>
+            <input class="join-input" required maxlength="15" type="text" />
+        </div>
+    </form>
+    <form id="todo-form">
+        <input id="todo-form-child" type="text" placeholder="Write a To Do and Press Enter" required>
+    </form>
+    <ul id="todo-list"><!-- gonna be added from javascript--></ul>
+    <div id="quote">
+        <span id="quote-text"></span>
+        <span id="quote-writer"></span>
+    </div>
+</br>
+</br>
+</br>
+</br>
+    <div id="weather">
+        <span></span>
+        <span></span>
+    </div>
+
+    <script src="js/greeting.js"></script>
+    <script src="js/clock.js"></script>
+    <script src="js/quotes.js"></script>
+    <script src="js/background.js"></script>
+    <script src="js/todo.js"></script>
+    <script src="js/weather.js"></script>
+
+    <script>
+        if(localStorage.getItem("username") === null) {
+            toDoForm.style.display="none";
+            quote.style.display="none";
+            author.style.display="none";
+        }
+        clock.style.display = "flex";
+        clock.style.marginBottom = "0"
+        document.getElementById("greeting").style.marginTop = "0";
+        
+
+        
+    </script>
+</body>

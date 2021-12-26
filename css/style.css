@@ -1,0 +1,113 @@
+body {
+    background-color: #2c3e50;
+}
+
+.hidden {
+    display: none;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#bgImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  animation: fadeIn 0.5s linear;
+}
+.join{
+    color: white;
+    font-size: 5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30vh;
+}
+.join-input{
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    caret-color: white;
+    border: none;
+    width :50%;
+    text-align: center;
+    outline: none;
+    border-bottom: white 3px solid;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+#greeting {
+    color: white;
+    font-size: 5rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20vh;
+}
+
+#clock{
+    color: white;
+    font-size: 2rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    min-height: 25vh;
+}
+
+
+#quote {
+    color: white;
+    font-size: 1.75rem;
+}
+
+#quote-writer {
+    color: lavender;
+}
+
+#weather {
+    color:white;
+    font-size: 1.75rem;
+    text-align: center;
+}
+
+#todo-list{
+    background-color: transparent;
+    color: white;
+    font-size: 1rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    width :50%;
+    outline: none;
+    float: unset;
+}
+#todo-form-child{
+    background-color: transparent;
+    color: white;
+    font-size: 3rem;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    caret-color: white;
+    border: none;
+    width :50%;
+    text-align: center;
+    outline: none;
+    border-bottom: white 3px solid;
+    margin-left: 25%;
+    margin-right: 25%;
+}
