@@ -16,7 +16,12 @@ function onLoginSubmit(event) {
 function paintGreetings(username){
     greeting.innerText = `Hello ${username}!`;
     greeting.classList.remove(HIDDEN_CLASSNAME);
-
+    if (self.name != 'reload') {
+        self.name = 'reload';
+        self.location.reload(true);
+    }
+    else self.name = ''; 
+    
 }
 const savedUsername = localStorage.getItem(USERNAME_KEY);
 
@@ -28,4 +33,5 @@ if(savedUsername === null) { // when not exist any "username" in localStorage
 } else {                    // when exist "username" in localStorage
     // show the greeting
     paintGreetings(savedUsername);
+    
 }
